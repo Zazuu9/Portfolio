@@ -1,0 +1,19 @@
+header {
+    @include Flex_Space-around_Center;
+    h1{
+        color: $color-primary;
+    }
+    nav {
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                padding: 12px;
+                a {
+                    text-decoration: none;
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}

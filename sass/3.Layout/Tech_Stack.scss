@@ -1,0 +1,27 @@
+#Tech_Stack {
+    height: 300px;
+    padding-top: 60px;
+    margin-bottom: 180px;
+    @include Flex_Column_Center_Center;
+    h2 {
+        color: $color-primary;
+        font-size: 30px;
+        margin: 0;
+    }
+    h3{
+        color: $color-secondary;
+        font-size: 20px;
+    }
+    .logoTech {
+        padding-top: 30px; 
+        @include Flex_Column_Center_Center;
+        .secondline {
+            padding-top: 10px;
+        }
+        img {
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+    }
+}

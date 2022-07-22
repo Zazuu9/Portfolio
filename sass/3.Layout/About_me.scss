@@ -1,0 +1,25 @@
+#About_me {
+    @include Flex_Center_Center;
+    margin-top: 150px;
+    margin-bottom: 250px;
+    margin-left: -100px;
+    .Desc_About-me {
+        h1{
+            color: $color-primary;
+            padding-right: 300px;
+            .Name {
+                background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    .ProfilPics {
+        @include Flex_Center_Center;
+        img {
+            position: absolute;
+            width: 300px;
+            border-radius: 150px;
+        }
+    }
+}

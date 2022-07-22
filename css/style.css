@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header h1 {
+  color: #42446E;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  padding: 12px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+#About_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 250px;
+  margin-left: -100px;
+}
+#About_me .Desc_About-me h1 {
+  color: #42446E;
+  padding-right: 300px;
+}
+#About_me .Desc_About-me h1 .Name {
+  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#About_me .ProfilPics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#About_me .ProfilPics img {
+  position: absolute;
+  width: 300px;
+  border-radius: 150px;
+}
+
+#Tech_Stack {
+  height: 300px;
+  padding-top: 60px;
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#Tech_Stack h2 {
+  color: #42446E;
+  font-size: 30px;
+  margin: 0;
+}
+#Tech_Stack h3 {
+  color: #666666;
+  font-size: 20px;
+}
+#Tech_Stack .logoTech {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#Tech_Stack .logoTech .secondline {
+  padding-top: 10px;
+}
+#Tech_Stack .logoTech img {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+#Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 180px;
+}
+#Projects h2 {
+  color: #42446E;
+  font-size: 30px;
+  margin: 0;
+}
+#Projects h3 {
+  color: #666666;
+  font-size: 20px;
+}
+#Projects .Project_case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+#Projects .Project_case .Case {
+  width: 25%;
+  height: 400px;
+  margin: 1.5%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px 0px gray;
+  transition: 0.2s;
+}
+#Projects .Project_case .Case img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 25px 25px 0px 0px;
+}
+#Projects .Project_case .Case .CaseDesc {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#Projects .Project_case .Case .CaseDesc h4 {
+  font-size: 20px;
+}
+#Projects .Project_case .Case .CaseDesc p {
+  color: #666666;
+  height: 75px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#Projects .Project_case .Case .CaseDesc .LinkCaseDesc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#Projects .Project_case .Case .CaseDesc .LinkCaseDesc a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+#Projects .Project_case .Case:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 180px;
+}
+#Contact h2 {
+  color: #1E0E62;
+  font-size: 42px;
+}
+#Contact h3 a {
+  font-size: 35px;
+  transition: 0.2s;
+  text-decoration: none;
+  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#Contact h3:hover {
+  transform: scale(1.18);
+  transition: 0.25s;
+}
+
+/*# sourceMappingURL=style.css.map */
