@@ -1,0 +1,24 @@
+footer {
+    background-color: $color-secondary;
+    height: 2px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+    .navbar {
+        @include Flex_Center_Center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 2.5%;
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                padding: 12px;
+                a {
+                    text-decoration: none;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
