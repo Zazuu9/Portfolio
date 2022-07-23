@@ -23,8 +23,26 @@
                     <li><a href="#Contact">Contact</a></li>
                     <li><a href="https://github.com/Zazuu9" title ="Github" target="_blank"><i class="fa-brands fa-github fa-lg"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/kevin-gouaille-a04039240/" title ="Linkedin" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                    <li class="changeTheme"><i class="fas fa-moon"></i></li>
                 </ul>
             </nav>
+
+            <script>
+                const switchThemeBtn = document.querySelector('.changeTheme')
+                let toggleTheme = 0;
+
+                switchThemeBtn.addEventListener('click', () => {
+                    if(toggleTheme === 0) {
+                        document.documentElement.style.setProperty('--ecriture', '#f1f1f1');
+                        document.documentElement.style.setProperty('--background', '#262626');
+                        toggleTheme++;
+                    } else {
+                        document.documentElement.style.setProperty('--ecriture', '#262626');
+                        document.documentElement.style.setProperty('--background', '#f1f1f1');
+                        toggleTheme--;
+                    }
+                })
+            </script>
         </header>
 
         <main>

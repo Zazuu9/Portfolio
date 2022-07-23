@@ -23,7 +23,7 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #666666;
+  color: #a0a0a0;
 }
 
 #About_me {
@@ -31,9 +31,6 @@ header nav ul li a {
   justify-content: space-around;
   align-items: center;
   margin: 180px;
-}
-#About_me .Desc_About-me h1 {
-  color: #42446E;
 }
 #About_me .Desc_About-me h1 .Name {
   background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
@@ -59,12 +56,11 @@ header nav ul li a {
   align-items: center;
 }
 #Tech_Stack h2 {
-  color: #42446E;
   font-size: 30px;
   margin: 0;
 }
 #Tech_Stack h3 {
-  color: #666666;
+  color: #a0a0a0;
   font-size: 20px;
 }
 #Tech_Stack .logoTech {
@@ -91,12 +87,11 @@ header nav ul li a {
   margin-bottom: 180px;
 }
 #Projects h2 {
-  color: #42446E;
   font-size: 30px;
   margin: 0;
 }
 #Projects h3 {
-  color: #666666;
+  color: #a0a0a0;
   font-size: 20px;
 }
 #Projects .Project_case {
@@ -131,7 +126,7 @@ header nav ul li a {
 }
 #Projects .Project_case .Case .CaseDesc h5 {
   font-size: 14px;
-  color: #666666;
+  color: #a0a0a0;
   height: 75px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -191,7 +186,7 @@ header nav ul li a {
 }
 
 footer {
-  background-color: #666666;
+  background-color: #a0a0a0;
   height: 2px;
   width: 80%;
   margin-left: 10%;
@@ -214,7 +209,73 @@ footer .navbar ul li {
 }
 footer .navbar ul li a {
   text-decoration: none;
-  color: #42446E;
+}
+
+:root {
+  --ecriture: #f1f1f1;
+  --background: #262626;
+  --color-secondary: #666666;
+  --color-tiertary: #1E0E62;
+}
+
+body {
+  transition: 0.3s;
+  background: var(--background);
+}
+
+#Home nav ul li a {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+#Home nav ul .changeTheme {
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+
+#About_me .Desc_About-me h1 {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+
+#Tech_Stack h2 {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+
+#Projects h2 {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+#Projects .Project_case .Case {
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px;
+}
+#Projects .Project_case .Case .CaseDesc h4 {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+#Projects .Project_case .Case .CaseDesc h5 {
+  transition: 0.3s;
+  color: var(--color-secondary);
+}
+#Projects .Project_case .Case .CaseDesc p {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+#Projects .Project_case .Case .CaseDesc .LinkCaseDesc a {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+
+#Contact h2 {
+  transition: 0.3s;
+  color: var(--ecriture);
+}
+
+footer .navbar ul li a {
+  transition: 0.3s;
+  color: var(--ecriture);
 }
 
 /*# sourceMappingURL=style.css.map */
