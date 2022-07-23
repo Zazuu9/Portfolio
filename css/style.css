@@ -10,7 +10,9 @@ header {
   align-items: center;
 }
 header h1 {
-  color: #42446E;
+  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header nav ul {
   display: flex;
