@@ -1,6 +1,6 @@
 #About_me {
     @include Flex_Space-around_Center;
-    margin: 180px;
+
     .Desc_About-me {
         h1{
             .Name {
@@ -11,9 +11,19 @@
         }
     }
     .ProfilPics {
-        @include Flex_Center_Center;
         img {
             width: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 534px) {
+    #About_me {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 150px;
+        h1 {
+            padding: 10%;
         }
     }
 }

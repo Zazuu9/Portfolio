@@ -23,3 +23,17 @@
     align-items: center;
 }
 
+@mixin Flex_Column-reverse_Center_Center {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin Flex_Wrap_Center_Center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+

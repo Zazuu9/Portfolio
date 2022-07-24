@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 * {
   font-family: "DM Sans", sans-serif;
-  /*background-color: #191919;*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -25,27 +27,48 @@ header nav ul li a {
   text-decoration: none;
   color: #a0a0a0;
 }
+header nav ul li a:hover {
+  text-decoration: underline;
+}
 
+@media screen and (max-width: 534px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 #About_me {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 180px;
 }
 #About_me .Desc_About-me h1 .Name {
   background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#About_me .ProfilPics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #About_me .ProfilPics img {
   width: 300px;
 }
 
+@media screen and (max-width: 534px) {
+  #About_me {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 150px;
+  }
+  #About_me h1 {
+    padding: 10%;
+  }
+}
 #Tech_Stack {
   height: 300px;
   padding-top: 60px;
@@ -64,14 +87,11 @@ header nav ul li a {
   font-size: 20px;
 }
 #Tech_Stack .logoTech {
-  padding-top: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-}
-#Tech_Stack .logoTech .secondline {
-  padding-top: 10px;
+  padding-top: 30px;
 }
 #Tech_Stack .logoTech img {
   padding-right: 15px;
@@ -79,6 +99,12 @@ header nav ul li a {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 534px) {
+  #Tech_Stack {
+    margin: 5%;
+    margin-bottom: 250px;
+  }
+}
 #Projects {
   display: flex;
   flex-direction: column;
@@ -105,7 +131,7 @@ header nav ul li a {
   height: 450px;
   margin: 1.5%;
   border-radius: 25px;
-  box-shadow: 0px 0px 30px 0px gray;
+  box-shadow: 0px 0px 30px 0px #a0a0a0;
   transition: 0.2s;
 }
 #Projects .Project_case .Case img {
@@ -160,6 +186,18 @@ header nav ul li a {
   box-shadow: 0px 0px 30px 0px black;
 }
 
+@media screen and (max-width: 534px) {
+  #Projects .Project_case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #Projects .Project_case .Case {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
 #Contact {
   display: flex;
   flex-direction: column;
@@ -185,6 +223,24 @@ header nav ul li a {
   transition: 0.25s;
 }
 
+@media screen and (max-width: 534px) {
+  #Contact {
+    display: flex;
+  }
+  #Contact h2 {
+    padding-left: 15%;
+    margin-bottom: 50px;
+  }
+  #Contact h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #Contact h3 a {
+    font-size: 30px;
+  }
+}
 footer {
   background-color: #a0a0a0;
   height: 2px;
@@ -210,7 +266,18 @@ footer .navbar ul li {
 footer .navbar ul li a {
   text-decoration: none;
 }
+footer .navbar ul li a:hover {
+  text-decoration: underline;
+}
 
+@media screen and (max-width: 534px) {
+  footer .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
 :root {
   --ecriture: #f1f1f1;
   --background: #262626;

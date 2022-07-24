@@ -15,7 +15,22 @@ header {
                     text-decoration: none;
                     color: $color-secondary;
                 }
+                a:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
+}
+
+@media screen and (max-width:534px) {
+    header {
+        @include Flex_Column_Center_Center;
+        nav {
+            ul {
+                @include Flex_Column_Center_Center
+            }
+        }
+    }
+    
 }

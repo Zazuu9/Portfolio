@@ -12,15 +12,20 @@
         font-size: 20px;
     }
     .logoTech {
+        @include Flex_Wrap_Center_Center;
         padding-top: 30px; 
-        @include Flex_Column_Center_Center;
-        .secondline {
-            padding-top: 10px;
-        }
         img {
             padding-right: 15px;
             padding-left: 15px;
             padding-bottom: 20px;
         }
+    }
+}
+
+@media screen and (max-width: 534px) {
+    #Tech_Stack {
+        margin: 5%;
+        
+        margin-bottom: 250px;
     }
 }
