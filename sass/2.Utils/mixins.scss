@@ -16,6 +16,12 @@
     align-items: center;
 }
 
+@mixin Flex_Space-evenly_Center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 @mixin Flex_Column_Center_Center {
     display: flex;
     flex-direction: column;

@@ -11,9 +11,9 @@
     }
     .Project_case {
         @include Flex_Center_Center;
-        width: 80%;
+        width: 90%;
         .Case {
-            width: 25%;
+            width: 27.5%;
             height: 450px;
             margin: 1.5%;
             border-radius: 25px;
@@ -35,6 +35,7 @@
                     padding-top: 10px;
                 }
                 h5{
+                    padding-top: 7px;
                     font-size: 14px;
                     color: $color-secondary;
                     height: 75px;
@@ -73,14 +74,25 @@
     }
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width:1000px) {
     #Projects {
-        h3 {
-        }
+        padding-top: 50px;
         .Project_case {
             @include Flex_Column_Center_Center;
             .Case {
-                width: 100%;
+                width: 80%;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850) {
+    #Projects {
+        .Project_case {
+            @include Flex_Column_Center_Center;
+            .Case {
+                width: 80%;
                 margin-top: 50px;
             }
         }

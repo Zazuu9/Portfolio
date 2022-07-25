@@ -31,12 +31,31 @@ header nav ul li a:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 870px) {
+  header h1 {
+    padding-left: 35%;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  header nav ul li a {
+    display: none;
+  }
+  header nav ul li i {
+    position: relative;
+    left: 50px;
+  }
+}
 @media screen and (max-width: 534px) {
   header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+  }
+  header h1 {
+    padding: 0;
+    padding-left: 10%;
   }
   header nav ul {
     display: flex;
@@ -44,11 +63,16 @@ header nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
   }
+  header nav ul li i {
+    position: relative;
+    bottom: 60px;
+  }
 }
 #About_me {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  height: 450px;
 }
 #About_me .Desc_About-me h1 .Name {
   background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
@@ -59,14 +83,21 @@ header nav ul li a:hover {
   width: 300px;
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 870px) {
   #About_me {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 150px;
+    height: 850px;
+    margin-top: -100px;
   }
   #About_me h1 {
-    padding: 10%;
+    padding: 0;
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #About_me h1 {
+    font-size: 24px;
   }
 }
 #Tech_Stack {
@@ -91,6 +122,7 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 80%;
   padding-top: 30px;
 }
 #Tech_Stack .logoTech img {
@@ -99,10 +131,23 @@ header nav ul li a:hover {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 870px) {
+  #Tech_Stack {
+    margin-top: 80px;
+  }
+  #Tech_Stack .logoTech {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 534px) {
   #Tech_Stack {
-    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 250px;
+  }
+  #Tech_Stack .logoTech {
+    width: 70%;
   }
 }
 #Projects {
@@ -124,10 +169,10 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 #Projects .Project_case .Case {
-  width: 25%;
+  width: 27.5%;
   height: 450px;
   margin: 1.5%;
   border-radius: 25px;
@@ -151,6 +196,7 @@ header nav ul li a:hover {
   padding-top: 10px;
 }
 #Projects .Project_case .Case .CaseDesc h5 {
+  padding-top: 7px;
   font-size: 14px;
   color: #a0a0a0;
   height: 75px;
@@ -186,7 +232,10 @@ header nav ul li a:hover {
   box-shadow: 0px 0px 30px 0px black;
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 1000px) {
+  #Projects {
+    padding-top: 50px;
+  }
   #Projects .Project_case {
     display: flex;
     flex-direction: column;
@@ -194,7 +243,19 @@ header nav ul li a:hover {
     align-items: center;
   }
   #Projects .Project_case .Case {
-    width: 100%;
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 850) {
+  #Projects .Project_case {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #Projects .Project_case .Case {
+    width: 80%;
     margin-top: 50px;
   }
 }
@@ -209,6 +270,7 @@ header nav ul li a:hover {
 #Contact h2 {
   color: #1E0E62;
   font-size: 42px;
+  margin-bottom: 50px;
 }
 #Contact h3 a {
   font-size: 35px;
@@ -226,19 +288,14 @@ header nav ul li a:hover {
 @media screen and (max-width: 534px) {
   #Contact {
     display: flex;
-  }
-  #Contact h2 {
-    padding-left: 15%;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
   }
   #Contact h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-  #Contact h3 a {
-    font-size: 30px;
   }
 }
 footer {
@@ -270,7 +327,7 @@ footer .navbar ul li a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 655px) {
   footer .navbar ul {
     display: flex;
     flex-direction: column;

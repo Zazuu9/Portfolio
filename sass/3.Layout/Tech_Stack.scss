@@ -13,6 +13,7 @@
     }
     .logoTech {
         @include Flex_Wrap_Center_Center;
+        width: 80%;
         padding-top: 30px; 
         img {
             padding-right: 15px;
@@ -22,10 +23,21 @@
     }
 }
 
+@media screen and (max-width: 870px) {
+    #Tech_Stack {
+        margin-top: 80px;
+        .logoTech {
+            width: 60%;
+        }
+    }
+}
+
 @media screen and (max-width: 534px) {
     #Tech_Stack {
-        margin: 5%;
-        
+        @include Flex_Center_Center;
         margin-bottom: 250px;
+        .logoTech {
+            width: 70%;
+        }
     }
 }

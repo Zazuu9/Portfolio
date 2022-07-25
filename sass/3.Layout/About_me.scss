@@ -1,6 +1,6 @@
 #About_me {
-    @include Flex_Space-around_Center;
-
+    @include Flex_Space-evenly_Center;
+    height: 450px;
     .Desc_About-me {
         h1{
             .Name {
@@ -17,13 +17,23 @@
     }
 }
 
-@media screen and (max-width: 534px) {
+@media screen and (max-width: 870px) {
     #About_me {
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 150px;
+        height: 850px;
+        margin-top: -100px;
         h1 {
-            padding: 10%;
+            padding: 0;
+            margin-top: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #About_me {
+        h1 {
+            font-size: 24px;
         }
     }
 }

@@ -23,12 +23,45 @@ header {
     }
 }
 
-@media screen and (max-width:534px) {
+@media screen and (max-width:870px) {
     header {
-        @include Flex_Column_Center_Center;
+        h1 {
+            padding-left: 35%;
+        }
         nav {
             ul {
-                @include Flex_Column_Center_Center
+                display: flex;
+                flex-direction: row-reverse;
+                li {
+                    a {
+                        display: none;
+                    }
+                    i {
+                        position: relative;
+                        left: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:534px) {
+    header {
+        @include Flex_Center_Center;
+        h1 {
+            padding: 0;
+            padding-left: 10%;
+        }
+        nav {
+            ul {
+                @include Flex_Column_Center_Center;
+                li {
+                    i {
+                        position: relative;
+                        bottom: 60px;
+                    }
+                }
             }
         }
     }
