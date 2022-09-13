@@ -12,12 +12,13 @@
     .Project_case {
         @include Flex_Center_Center;
         width: 90%;
+        flex-wrap: wrap;
         .Case {
             width: 27.5%;
-            height: 450px;
+            height: 500px;
             margin: 1.5%;
             border-radius: 25px;
-            box-shadow: 0px 0px 30px 0px $color-secondary;
+            box-shadow: $color-secondary 0px 7px 29px 0px;
             transition: 0.2s;
             img {
                 width: 100%;
@@ -28,40 +29,44 @@
             .CaseDesc {
                 padding-left: 5%;
                 padding-right: 5%;
-                h4{
+                h4 {
                     font-size: 20px;
                     margin: 0;
-                    height: 30px;
+                    height: 50px;
                     padding-top: 10px;
                 }
-                h5{
+                h5 {
                     padding-top: 7px;
                     font-size: 14px;
                     color: $color-secondary;
-                    height: 75px;
+                    height: 125px;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     margin: 0;
-                    height: 100px;
                 }
                 p {
                     margin: 0;
                     height: 25px;
                     font-size: 15px;
-                    .Language{
+                    .Language {
                         font-size: 12px;
                     }
                 }
                 .LinkCaseDesc {
                     @include Flex_Space-around_Center;
                     a {
-                        
                         font-size: 16px;
                         text-decoration: none;
                         color: black;
                     }
                     a:hover {
                         text-decoration: underline;
+                    }
+                    .broken {
+                        text-decoration: line-through;
+                    }
+                    .broken:hover {
+                        text-decoration: line-through;
                     }
                 }
             }
@@ -74,7 +79,7 @@
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
     #Projects {
         padding-top: 50px;
         .Project_case {
@@ -82,6 +87,11 @@
             .Case {
                 width: 80%;
                 margin-top: 50px;
+                .CaseDesc {
+                    h5 {
+                        height: 130px;
+                    }
+                }
             }
         }
     }
@@ -97,5 +107,4 @@
             }
         }
     }
-    
 }

@@ -170,13 +170,14 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   width: 90%;
+  flex-wrap: wrap;
 }
 #Projects .Project_case .Case {
   width: 27.5%;
-  height: 450px;
+  height: 500px;
   margin: 1.5%;
   border-radius: 25px;
-  box-shadow: 0px 0px 30px 0px #a0a0a0;
+  box-shadow: #a0a0a0 0px 7px 29px 0px;
   transition: 0.2s;
 }
 #Projects .Project_case .Case img {
@@ -192,18 +193,17 @@ header nav ul li a:hover {
 #Projects .Project_case .Case .CaseDesc h4 {
   font-size: 20px;
   margin: 0;
-  height: 30px;
+  height: 50px;
   padding-top: 10px;
 }
 #Projects .Project_case .Case .CaseDesc h5 {
   padding-top: 7px;
   font-size: 14px;
   color: #a0a0a0;
-  height: 75px;
+  height: 125px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  height: 100px;
 }
 #Projects .Project_case .Case .CaseDesc p {
   margin: 0;
@@ -226,6 +226,12 @@ header nav ul li a:hover {
 #Projects .Project_case .Case .CaseDesc .LinkCaseDesc a:hover {
   text-decoration: underline;
 }
+#Projects .Project_case .Case .CaseDesc .LinkCaseDesc .broken {
+  text-decoration: line-through;
+}
+#Projects .Project_case .Case .CaseDesc .LinkCaseDesc .broken:hover {
+  text-decoration: line-through;
+}
 #Projects .Project_case .Case:hover {
   transform: scale(1.02);
   transition: 0.2s;
@@ -245,6 +251,9 @@ header nav ul li a:hover {
   #Projects .Project_case .Case {
     width: 80%;
     margin-top: 50px;
+  }
+  #Projects .Project_case .Case .CaseDesc h5 {
+    height: 130px;
   }
 }
 @media screen and (max-width: 850) {
