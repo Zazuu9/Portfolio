@@ -8,22 +8,23 @@
         margin-bottom: 50px;
     }
     h3 {
+        transition: 0.25s;
         a {
             font-size: 35px;
             transition: 0.2s;
             text-decoration: none;
-            background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+            background: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     }
-    h3:hover{
+    h3:hover {
         transform: scale(1.18);
         transition: 0.25s;
     }
 }
 
-@media screen and (max-width:534px) {
+@media screen and (max-width: 534px) {
     #Contact {
         @include Flex_Center_Center;
         h2 {

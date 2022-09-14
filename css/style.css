@@ -281,11 +281,14 @@ header nav ul li a:hover {
   font-size: 42px;
   margin-bottom: 50px;
 }
+#Contact h3 {
+  transition: 0.25s;
+}
 #Contact h3 a {
   font-size: 35px;
   transition: 0.2s;
   text-decoration: none;
-  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  background: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
