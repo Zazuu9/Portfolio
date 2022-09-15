@@ -12,7 +12,7 @@ header {
   align-items: center;
 }
 header h1 {
-  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  background: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -26,6 +26,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #a0a0a0;
+  cursor: pointer;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -75,7 +76,7 @@ header nav ul li a:hover {
   height: 450px;
 }
 #About_me .Desc_About-me h1 .Name {
-  background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+  background: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -334,6 +335,7 @@ footer .navbar ul li {
 }
 footer .navbar ul li a {
   text-decoration: none;
+  cursor: pointer;
 }
 footer .navbar ul li a:hover {
   text-decoration: underline;

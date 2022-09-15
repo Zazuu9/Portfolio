@@ -16,6 +16,7 @@ footer {
                 padding: 12px;
                 a {
                     text-decoration: none;
+                    cursor: pointer;
                 }
                 a:hover {
                     text-decoration: underline;
@@ -29,9 +30,8 @@ footer {
     footer {
         .navbar {
             ul {
-                @include Flex_Column_Center_Center
+                @include Flex_Column_Center_Center;
             }
         }
     }
-    
 }

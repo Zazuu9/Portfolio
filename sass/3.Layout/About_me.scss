@@ -2,9 +2,9 @@
     @include Flex_Space-evenly_Center;
     height: 450px;
     .Desc_About-me {
-        h1{
+        h1 {
             .Name {
-                background: linear-gradient(90deg, #13B0F5 0%, #E70FAA 100%);
+                background: linear-gradient(90deg, #13b0f5 0%, #e70faa 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
